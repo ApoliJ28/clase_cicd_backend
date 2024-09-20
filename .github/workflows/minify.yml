@@ -26,7 +26,7 @@ jobs:
         run: npm install minify -g
 
       - name: Minify JavaScript
-        run: minify main.js > main.min.js
+        run: minify main.js > app.js
 
       - name: Commit minified file
         uses: stefanzweifel/git-auto-commit-action@v5
